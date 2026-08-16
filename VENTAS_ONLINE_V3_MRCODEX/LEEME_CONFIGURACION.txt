@@ -1,0 +1,44 @@
+====================================================================
+ GUIA DE INSTALACION Y CONFIGURACION - BOT DE VENTAS TELEGRAM V3
+ Administrador y Encargado: @mrcodexofc
+====================================================================
+
+1. REQUISITOS:
+   - Tener instalado Python 3.10 o superior.
+   - Credenciales API de Telegram (API_ID y API_HASH de https://my.telegram.org).
+
+2. INSTALACION:
+   Abre la consola en esta carpeta y escribe:
+   pip install -r requirements.txt
+
+3. CONFIGURACION (.env):
+   Abre el archivo .env para ajustar tus parametros:
+   - SESSION_PATH=clenaerdev2.session  (Archivo de sesion)
+   - API_ID=37093543                  (Tu API ID)
+   - API_HASH=f66388f2e57fc4fe401f7dc9cc17143e  (Tu API HASH)
+   - DESTINATION_TARGET=-1004347839377 (ID de tu grupo de alertas)
+   - USER_TO_MENTION=@mrcodexofc       (Tu usuario de Telegram)
+   - ADMIN_MENTIONS=@mrcodexofc        (Usuario mencionado en las alertas)
+   - MIN_SCORE=60                     (Puntaje minimo de compra, recomendado 60)
+
+4. VERIFICAR FUNCIONAMIENTO:
+   python main.py --check
+
+5. INICIAR EL BOT:
+   python main.py --run
+
+   * La primera vez te pedira tu numero de telefono y codigo de Telegram.
+   * Una vez ingresado, la sesion queda guardada en "clenaerdev2.session"
+     y nunca mas te volvera a pedir codigo.
+
+6. COMANDOS DENTRO DE TELEGRAM:
+   En tu grupo destino puedes usar:
+   /status  - Ver estado del bot
+   /stats   - Ver estadisticas acumuladas de leads
+   /trends  - Ver tendencias de servicios mas pedidos
+   /test    - Enviar una alerta de prueba
+   /pause   - Pausar deteccion de leads
+   /resume  - Reanudar deteccion de leads
+   /help    - Ver todos los comandos disponibles
+
+====================================================================
