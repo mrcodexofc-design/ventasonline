@@ -1,0 +1,33 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Telethon & Secrets (IMPORTANT: Keep private)
+.env
+*.session
+*.session-journal
+telegram_monitor_session.session
+
+# Compressed archives
+*.zip
+*.tar.gz
+*.rar
+
+# Logs & Runtime data
+logs/*.log
+logs/data/*.json
+*.log
+
+# IDE & Editor files
+.agents/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
